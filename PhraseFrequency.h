@@ -18,7 +18,7 @@ public:
     ~PhraseFrequency();
     void ReadFile(string &fileName_);
     void WriteFile(string &fileName_);
-    void ReadWord(string &word_, ifstream din_);
+    bool ReadWord(string &word_, ifstream din_);
     void MergeSort(int *data_, int *copy_, int low, int high);
 
 private:
