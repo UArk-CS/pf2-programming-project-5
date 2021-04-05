@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include "PhraseFrequency.h"
 using namespace std;
 
 //bool read_word(string &word, ifstream &din);
@@ -7,10 +8,15 @@ using namespace std;
 
 int main() {
 
+    PhraseFrequency pf;
+    string fileName = "TreasureIsland.txt";
+
     // Get file names
 //    cout << "Enter name of input file: ";
 //    string name1;
 //    cin >> name1;
+
+    pf.ReadFile(fileName);
 
     // Open files
 //    ifstream din;

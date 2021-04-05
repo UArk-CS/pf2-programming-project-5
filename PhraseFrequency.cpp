@@ -22,13 +22,57 @@ PhraseFrequency::~PhraseFrequency() {
 
 void PhraseFrequency::ReadFile(string &fileName_) {
 
+    string wordOne, wordTwo;
+    string phrase;
+
+    ifstream din;
+    din.open(fileName_);
+    if (din.fail()) {
+        return;
+    }
+
+    if (din.is_open()) {
+
+//        while (!din.fail() && !din.eof()) {
+//
+//            ReadWord(wordOne, din);
+//            ReadWord(wordTwo, din);
+//
+//            phrase = wordOne + " " + wordTwo;
+//
+//        }
+
+        ReadWord(wordOne, din);
+
+        for (int i = 0; i < 4; i++) {
+
+            ReadWord(wordTwo, din);
+
+//            phrase = wordOne.append(wordTwo);
+
+            phrase = wordOne + " " + wordTwo;
+
+
+            cout << "Word One: " << wordOne << endl;
+            cout << "Word Two: " << wordTwo << endl;
+            cout << "Phrase: " << phrase << endl;
+
+            wordOne = wordTwo;
+
+        }
+
+    }
+
+
+    din.close();
+
 }
 
 void PhraseFrequency::WriteFile(string &fileName_) {
 
 }
 
-bool PhraseFrequency::ReadWord(string &word_, ifstream din_) {
+bool PhraseFrequency::ReadWord(string &word_, ifstream &din_) {
 
     // Initialize variables
     word_ = "";
