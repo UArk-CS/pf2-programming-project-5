@@ -1,0 +1,90 @@
+Script started on Mon Apr  5 23:35:45 2021
+Restored session: Mon Apr  5 23:33:35 CDT 2021
+]7;file://Bens-MacBook-Pro-2.local/Users/benworthington/Documents/UArk%20Spring%202021/Programming%20Foundations%202%20(CSCE%202014)/Projects/pf2-programming-project-5[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Bens-MacBook-Pro-2.local/Users/benworthington/Documents/UArk%20Spring%202021/Programming%20Foundations%202%20%28CSCE%202014%29/Projects/pf2-programming-project-5]2;benworthington@Bens-MacBook-Pro-2]1;..ing-project-5]7;file://Bens-MacBook-Pro-2.local/Users/benworthington/Documents/UArk%20Spring%202021/Programming%20Foundations%202%20(CSCE%202014)/Projects/pf2-programming-project-5[0m[27m[24m[J
+[38;5;135mbenworthington[39m at [38;5;166mBens-MacBook-Pro-2[39m in [38;5;118m~/Documents/UArk Spring 2021/Programming Foundations 2 (CSCE 2014)/Projects/pf2-programming-project-5[39m ([38;5;81mmaster[38;5;161m●[39m) 
+$ [K[?1h=[?2004hmman m  gg++ -Wall *.cpp -o project5[?1l>[?2004l
+]2;g++ -Wall *.cpp -o project5]1;g++[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Bens-MacBook-Pro-2.local/Users/benworthington/Documents/UArk%20Spring%202021/Programming%20Foundations%202%20%28CSCE%202014%29/Projects/pf2-programming-project-5]2;benworthington@Bens-MacBook-Pro-2]1;..ing-project-5]7;file://Bens-MacBook-Pro-2.local/Users/benworthington/Documents/UArk%20Spring%202021/Programming%20Foundations%202%20(CSCE%202014)/Projects/pf2-programming-project-5[0m[27m[24m[J
+[38;5;135mbenworthington[39m at [38;5;166mBens-MacBook-Pro-2[39m in [38;5;118m~/Documents/UArk Spring 2021/Programming Foundations 2 (CSCE 2014)/Projects/pf2-programming-project-5[39m ([38;5;81mmaster[38;5;161m●[39m) 
+$ [K[?1h=[?2004h../project5[1m [0m[0m [?1l>[?2004l
+]2;./project5]1;./project5Welcome to the Phrase Frequency Calculator
+
+Enter the name of the book (with .txt extension): > TreasureIsland.txt
+
+Enter the name of the output file (with .txt extension): > tioutput.txt
+
+Extracting two word phrases from book...
+Extraction complete.
+
+Sorting phrases with Merge Sort...
+Sorting complete.
+
+Calculating Frequency of phrases...
+Frequency calculation complete.
+
+Extraction Run Time: 0.062732 seconds.
+Sorting Run Time: 0.122925 seconds.
+Frequency Run Time: 1.65092 seconds. 
+[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Bens-MacBook-Pro-2.local/Users/benworthington/Documents/UArk%20Spring%202021/Programming%20Foundations%202%20%28CSCE%202014%29/Projects/pf2-programming-project-5]2;benworthington@Bens-MacBook-Pro-2]1;..ing-project-5]7;file://Bens-MacBook-Pro-2.local/Users/benworthington/Documents/UArk%20Spring%202021/Programming%20Foundations%202%20(CSCE%202014)/Projects/pf2-programming-project-5[0m[27m[24m[J
+[38;5;135mbenworthington[39m at [38;5;166mBens-MacBook-Pro-2[39m in [38;5;118m~/Documents/UArk Spring 2021/Programming Foundations 2 (CSCE 2014)/Projects/pf2-programming-project-5[39m ([38;5;81mmaster[38;5;161m●[39m) 
+$ [K[?1h=[?2004hssort -n -r tioutput.txt[1m [0m[0m -o tisorted.txt[?1l>[?2004l
+]2;sort -n -r tioutput.txt -o tisorted.txt]1;sort[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Bens-MacBook-Pro-2.local/Users/benworthington/Documents/UArk%20Spring%202021/Programming%20Foundations%202%20%28CSCE%202014%29/Projects/pf2-programming-project-5]2;benworthington@Bens-MacBook-Pro-2]1;..ing-project-5]7;file://Bens-MacBook-Pro-2.local/Users/benworthington/Documents/UArk%20Spring%202021/Programming%20Foundations%202%20(CSCE%202014)/Projects/pf2-programming-project-5[0m[27m[24m[J
+[38;5;135mbenworthington[39m at [38;5;166mBens-MacBook-Pro-2[39m in [38;5;118m~/Documents/UArk Spring 2021/Programming Foundations 2 (CSCE 2014)/Projects/pf2-programming-project-5[39m ([38;5;81mmaster[38;5;161m●[39m) 
+$ [K[?1h=[?2004hhhead ti
+[J[0mtioutput.txt  [Jtisorted.txt[J[A[0m[27m[24m[39m[2Chead ti[K[39moutput.txt
+[J[7mtioutput.txt[0m  [Jtisorted.txt[J[A[0m[27m[24m[39m[2Chead tioutput.txt[K[39m
+[7mtioutput.txt[0m  [7mtioutput.txt[0m  [A[0m[27m[24m[39m[2Chead tioutput.txt[K[39m[10Dsorted[4C
+[14C[7mtisorted.txt[0mtioutput.txt  [A[0m[27m[24m[39m[2Chead tisorted.txt[K[39m
+[J[A[19C[1m [0m[0m [?1l>[?2004l
+[J]2;head tisorted.txt]1;head509 of the
+284 in the
+236 and the
+212 it was
+204 and i
+185 on the
+173 the captain
+173 i was
+162 to the
+157 i had
+[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Bens-MacBook-Pro-2.local/Users/benworthington/Documents/UArk%20Spring%202021/Programming%20Foundations%202%20%28CSCE%202014%29/Projects/pf2-programming-project-5]2;benworthington@Bens-MacBook-Pro-2]1;..ing-project-5]7;file://Bens-MacBook-Pro-2.local/Users/benworthington/Documents/UArk%20Spring%202021/Programming%20Foundations%202%20(CSCE%202014)/Projects/pf2-programming-project-5[0m[27m[24m[J
+[38;5;135mbenworthington[39m at [38;5;166mBens-MacBook-Pro-2[39m in [38;5;118m~/Documents/UArk Spring 2021/Programming Foundations 2 (CSCE 2014)/Projects/pf2-programming-project-5[39m ([38;5;81mmaster[38;5;161m●[39m) 
+$ [K[?1h=[?2004h../project5[1m [0m[0m [?1l>[?2004l
+]2;./project5]1;./project5Welcome to the Phrase Frequency Calculator
+
+Enter the name of the book (with .txt extension): > Odyssey.txt
+
+Enter the name of the output file (with .txt extension): > o-output.txt
+
+Extracting two word phrases from book...
+Extraction complete.
+
+Sorting phrases with Merge Sort...
+Sorting complete.
+
+Calculating Frequency of phrases...
+Frequency calculation complete.
+
+Extraction Run Time: 0.107058 seconds.
+Sorting Run Time: 0.124074 seconds.
+Frequency Run Time: 1.50497 seconds. 
+[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Bens-MacBook-Pro-2.local/Users/benworthington/Documents/UArk%20Spring%202021/Programming%20Foundations%202%20%28CSCE%202014%29/Projects/pf2-programming-project-5]2;benworthington@Bens-MacBook-Pro-2]1;..ing-project-5]7;file://Bens-MacBook-Pro-2.local/Users/benworthington/Documents/UArk%20Spring%202021/Programming%20Foundations%202%20(CSCE%202014)/Projects/pf2-programming-project-5[0m[27m[24m[J
+[38;5;135mbenworthington[39m at [38;5;166mBens-MacBook-Pro-2[39m in [38;5;118m~/Documents/UArk Spring 2021/Programming Foundations 2 (CSCE 2014)/Projects/pf2-programming-project-5[39m ([38;5;81mmaster[38;5;161m●[39m) 
+$ [K[?1h=[?2004hssort -n -r o-output.txt -o osorted.txt[?1l>[?2004l
+]2;sort -n -r o-output.txt -o osorted.txt]1;sort[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Bens-MacBook-Pro-2.local/Users/benworthington/Documents/UArk%20Spring%202021/Programming%20Foundations%202%20%28CSCE%202014%29/Projects/pf2-programming-project-5]2;benworthington@Bens-MacBook-Pro-2]1;..ing-project-5]7;file://Bens-MacBook-Pro-2.local/Users/benworthington/Documents/UArk%20Spring%202021/Programming%20Foundations%202%20(CSCE%202014)/Projects/pf2-programming-project-5[0m[27m[24m[J
+[38;5;135mbenworthington[39m at [38;5;166mBens-MacBook-Pro-2[39m in [38;5;118m~/Documents/UArk Spring 2021/Programming Foundations 2 (CSCE 2014)/Projects/pf2-programming-project-5[39m ([38;5;81mmaster[38;5;161m●[39m) 
+$ [K[?1h=[?2004hhhead osorted.txt[1m [0m[0m o [?1l>[?2004l
+]2;head osorted.txt]1;head423 of the
+266 to the
+260 in the
+148 and the
+130 on the
+103 the sea
+100 you are
+98 i will
+98 he was
+95 for the
+[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Bens-MacBook-Pro-2.local/Users/benworthington/Documents/UArk%20Spring%202021/Programming%20Foundations%202%20%28CSCE%202014%29/Projects/pf2-programming-project-5]2;benworthington@Bens-MacBook-Pro-2]1;..ing-project-5]7;file://Bens-MacBook-Pro-2.local/Users/benworthington/Documents/UArk%20Spring%202021/Programming%20Foundations%202%20(CSCE%202014)/Projects/pf2-programming-project-5[0m[27m[24m[J
+[38;5;135mbenworthington[39m at [38;5;166mBens-MacBook-Pro-2[39m in [38;5;118m~/Documents/UArk Spring 2021/Programming Foundations 2 (CSCE 2014)/Projects/pf2-programming-project-5[39m ([38;5;81mmaster[38;5;161m●[39m) 
+$ [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exitSaving session...completed.
+
+Script done on Mon Apr  5 23:37:34 2021
