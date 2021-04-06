@@ -18,10 +18,12 @@ public:
     int getCount() const;
     void setCount(int count);
     void ReadFile(string &fileName_);
-    void WriteFile(string &fileName_);
+    void WriteFile(string &fileName_, int &frequency_, string &phrase_);
     void WriteToArray(string &phrase_);
     bool ReadWord(string &word_, ifstream &din_);
     void MergeSort(int low_, int high_);
+    void CountFrequency(string &fileName_);
+    void Print();
 
 private:
     string *twoWordPhrases;

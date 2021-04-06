@@ -58,7 +58,21 @@ void PhraseFrequency::ReadFile(string &fileName_) {
 
 }
 
-void PhraseFrequency::WriteFile(string &fileName_) {
+void PhraseFrequency::WriteFile(string &fileName_, int &frequency_, string &phrase_) {
+
+    ofstream dout;
+    dout.open(fileName_, fstream::app);
+    if (dout.fail()) {
+        return;
+    }
+
+    if (dout.is_open()) {
+
+        dout << frequency_ << " " << phrase_ << endl;
+
+    }
+
+    dout.close();
 
 }
 
@@ -148,6 +162,34 @@ void PhraseFrequency::MergeSort(int low_, int high_) {
         // Copy twoWordPhrases back from the temporary array
         for (index = 0; index < range; index++)
             twoWordPhrases[low_ + index] = copyTwoWordPhrases[index];
+    }
+
+}
+
+void PhraseFrequency::CountFrequency(string &fileName_) {
+
+    int frequency = 1;
+    string word;
+
+    for (int i = 0; i < count - 1; i++) {
+
+        if (twoWordPhrases[i] == twoWordPhrases[i + 1]) {
+            frequency++;
+        } else {
+            WriteFile(fileName_, frequency, twoWordPhrases[i]);
+            frequency = 1;
+        }
+
+    }
+
+}
+
+void PhraseFrequency::Print() {
+
+    for (int i = 0; i < count - 1; i++) {
+
+        cout << twoWordPhrases[i] << endl;
+
     }
 
 }
