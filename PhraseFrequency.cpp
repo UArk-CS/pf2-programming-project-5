@@ -37,6 +37,8 @@ void PhraseFrequency::ReadFile(string &fileName_) {
 
         while (!din.fail() && !din.eof()) {
 
+            cout << "Count: " << count << endl;
+
             ReadWord(wordTwo, din);
 
             phrase = wordOne + " " + wordTwo;
@@ -103,7 +105,15 @@ bool PhraseFrequency::ReadWord(string &word_, ifstream &din_) {
 
 }
 
-void PhraseFrequency::MergeSort(int *data_, int *copy_, int low_, int high_) {
+int PhraseFrequency::getCount() const {
+    return count;
+}
+
+void PhraseFrequency::setCount(int count) {
+    PhraseFrequency::count = count;
+}
+
+void PhraseFrequency::MergeSort(int low_, int high_) {
 
     // Check terminating condition
     int range = high_ - low_ + 1;
@@ -111,34 +121,34 @@ void PhraseFrequency::MergeSort(int *data_, int *copy_, int low_, int high_) {
     {
         // Divide the array and sort both halves
         int mid = (low_ + high_) / 2;
-        MergeSort(data_, copy_, low_, mid);
-        MergeSort(data_, copy_, mid + 1, high_);
+        MergeSort(low_, mid);
+        MergeSort(mid + 1, high_);
 
         // Initialize array indices
         int index1 = low_;
         int index2 = mid + 1;
         int index = 0;
 
-        // Merge smallest data_ elements into copy_ array
+        // Merge smallest twoWordPhrases elements into sortedTwoWordPhrases array
         while (index1 <= mid && index2 <= high_)
         {
-            if (data_[index1] < data_[index2])
-                copy_[index++] = data_[index1++];
+            if (twoWordPhrases[index1] < twoWordPhrases[index2])
+                sortedTwoWordPhrases[index++] = twoWordPhrases[index1++];
             else
-                copy_[index++] = data_[index2++];
+                sortedTwoWordPhrases[index++] = twoWordPhrases[index2++];
         }
 
         // Copy any remaining entries from the first half
         while (index1 <= mid)
-            copy_[index++] = data_[index1++];
+            sortedTwoWordPhrases[index++] = twoWordPhrases[index1++];
 
         // Copy any remaining entries from the second half
         while (index2 <= high_)
-            copy_[index++] = data_[index2++];
+            sortedTwoWordPhrases[index++] = twoWordPhrases[index2++];
 
-        // Copy data_ back from the temporary array
+        // Copy twoWordPhrases back from the temporary array
         for (index = 0; index < range; index++)
-            data_[low_ + index] = copy_[index];
+            twoWordPhrases[low_ + index] = sortedTwoWordPhrases[index];
     }
 
 }

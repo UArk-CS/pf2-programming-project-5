@@ -17,6 +17,7 @@ int main() {
 //    cin >> name1;
 
     pf.ReadFile(fileName);
+    pf.MergeSort(0, pf.getCount() - 1);
 
     // Open files
 //    ifstream din;
