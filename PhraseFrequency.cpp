@@ -35,15 +35,15 @@ void PhraseFrequency::ReadFile(string &fileName_) {
 
         while (!din.fail() && !din.eof()) {
 
-            cout << "Count: " << count << endl;
+//            cout << "Count: " << count << endl;
 
             ReadWord(wordTwo, din);
 
             phrase = wordOne + " " + wordTwo;
 
-            cout << "Word One: " << wordOne << endl;
-            cout << "Word Two: " << wordTwo << endl;
-            cout << "Phrase: " << phrase << endl;
+//            cout << "Word One: " << wordOne << endl;
+//            cout << "Word Two: " << wordTwo << endl;
+//            cout << "Phrase: " << phrase << endl;
 
             WriteToArray(phrase);
 
