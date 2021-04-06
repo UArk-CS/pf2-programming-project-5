@@ -6,17 +6,15 @@
 
 PhraseFrequency::PhraseFrequency() {
 
+    twoWordPhrases = new string[MAX_PHRASE_COUNT];
+    copyTwoWordPhrases = new string[MAX_PHRASE_COUNT];
     count = 0;
 
 }
 
-PhraseFrequency::PhraseFrequency(PhraseFrequency &copy_) {
-
-    copy_.count = count;
-
-}
-
 PhraseFrequency::~PhraseFrequency() {
+
+    delete[] twoWordPhrases;
 
 }
 
@@ -55,6 +53,7 @@ void PhraseFrequency::ReadFile(string &fileName_) {
 
     }
 
+    delete[] copyTwoWordPhrases;
     din.close();
 
 }
@@ -133,22 +132,22 @@ void PhraseFrequency::MergeSort(int low_, int high_) {
         while (index1 <= mid && index2 <= high_)
         {
             if (twoWordPhrases[index1] < twoWordPhrases[index2])
-                sortedTwoWordPhrases[index++] = twoWordPhrases[index1++];
+                copyTwoWordPhrases[index++] = twoWordPhrases[index1++];
             else
-                sortedTwoWordPhrases[index++] = twoWordPhrases[index2++];
+                copyTwoWordPhrases[index++] = twoWordPhrases[index2++];
         }
 
         // Copy any remaining entries from the first half
         while (index1 <= mid)
-            sortedTwoWordPhrases[index++] = twoWordPhrases[index1++];
+            copyTwoWordPhrases[index++] = twoWordPhrases[index1++];
 
         // Copy any remaining entries from the second half
         while (index2 <= high_)
-            sortedTwoWordPhrases[index++] = twoWordPhrases[index2++];
+            copyTwoWordPhrases[index++] = twoWordPhrases[index2++];
 
         // Copy twoWordPhrases back from the temporary array
         for (index = 0; index < range; index++)
-            twoWordPhrases[low_ + index] = sortedTwoWordPhrases[index];
+            twoWordPhrases[low_ + index] = copyTwoWordPhrases[index];
     }
 
 }

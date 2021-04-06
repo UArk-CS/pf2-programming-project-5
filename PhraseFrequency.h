@@ -14,7 +14,6 @@ using namespace std;
 class PhraseFrequency {
 public:
     PhraseFrequency();
-    PhraseFrequency(PhraseFrequency &copy_);
     ~PhraseFrequency();
     int getCount() const;
     void setCount(int count);
@@ -25,8 +24,8 @@ public:
     void MergeSort(int low_, int high_);
 
 private:
-    string twoWordPhrases[MAX_PHRASE_COUNT];
-    string sortedTwoWordPhrases[MAX_PHRASE_COUNT];
+    string *twoWordPhrases;
+    string *copyTwoWordPhrases;
     int count;
 };
 
