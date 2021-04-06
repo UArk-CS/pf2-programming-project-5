@@ -33,29 +33,19 @@ void PhraseFrequency::ReadFile(string &fileName_) {
 
     if (din.is_open()) {
 
-//        while (!din.fail() && !din.eof()) {
-//
-//            ReadWord(wordOne, din);
-//            ReadWord(wordTwo, din);
-//
-//            phrase = wordOne + " " + wordTwo;
-//
-//        }
-
         ReadWord(wordOne, din);
 
-        for (int i = 0; i < 4; i++) {
+        while (!din.fail() && !din.eof()) {
 
             ReadWord(wordTwo, din);
 
-//            phrase = wordOne.append(wordTwo);
-
             phrase = wordOne + " " + wordTwo;
-
 
             cout << "Word One: " << wordOne << endl;
             cout << "Word Two: " << wordTwo << endl;
             cout << "Phrase: " << phrase << endl;
+
+            WriteToArray(phrase);
 
             wordOne = wordTwo;
 
@@ -63,12 +53,22 @@ void PhraseFrequency::ReadFile(string &fileName_) {
 
     }
 
-
     din.close();
 
 }
 
 void PhraseFrequency::WriteFile(string &fileName_) {
+
+}
+
+void PhraseFrequency::WriteToArray(string &phrase_) {
+
+    if (count < MAX_PHRASE_COUNT) {
+
+        twoWordPhrases[count] = phrase_;
+        count++;
+
+    }
 
 }
 
